@@ -12,6 +12,8 @@
     </script>
 </head>
 
+<script src="./script.js"></script>
+
 <body style='margin: 0; overflow: hidden;'>
     <a-scene
         vr-mode-ui="enabled: false"
@@ -20,6 +22,6 @@
         
         <a-entity gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="longitude: 12.489820; latitude: 41.892590;" animation-mixer/>
 
-        <a-camera gps-camera rotation-reader></a-camera>
+        <a-camera gps-camera-debug embedded arjs='sourceType: webcam; debugUIEnabled: true;'></a-camera>
 	</a-scene>
 </body>
